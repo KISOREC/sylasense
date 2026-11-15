@@ -1,0 +1,6 @@
+{
+  "name": "SylvaSense — Predictive Forest Intelligence Network",
+  "description": "Environmental intelligence platform combining Sentinel-2 NDVI analysis, multi-signal fusion, explainable disturbance risk scoring, and Gemini evidence synthesis for Western Ghats forest monitoring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
