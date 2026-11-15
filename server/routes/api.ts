@@ -4,12 +4,18 @@ import { querySylvaAnalyst } from '../services/geminiAnalyst.ts';
 import { computeSentinel2Ndvi } from '../services/ndvi.ts';
 import { DEFAULT_RISK_WEIGHTS } from '../services/riskEngine.ts';
 import { dataSourceManager } from '../services/dataSourceManager.ts';
+import { checkGeeHealth } from '../services/geeAdapter.ts';
 import type { Alert, EvidenceRecord, RiskWeights } from '../../src/types/sylvasense.ts';
 
 export const apiRouter = Router();
 
 apiRouter.get('/health', (_req, res) => {
   res.json({ ok: true, service: 'sylvasense-api', timestamp: new Date().toISOString() });
+});
+
+apiRouter.get('/gee/health', async (_req, res) => {
+  const status = await checkGeeHealth();
+  res.json(status);
 });
 
 apiRouter.get('/snapshot', (_req, res) => {

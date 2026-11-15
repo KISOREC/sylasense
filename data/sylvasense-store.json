@@ -1747,6 +1747,24 @@
   ],
   "auditLogs": [
     {
+      "id": "log-1794771887718-981",
+      "timestamp": "2026-11-15T19:44:47.718Z",
+      "actor": "Data Source Manager",
+      "action": "Tested connector ds-gee (Live)",
+      "targetType": "datasource",
+      "targetId": "ds-gee",
+      "detail": "Google Earth Engine service account authenticated and project verified."
+    },
+    {
+      "id": "log-1794771835784-874",
+      "timestamp": "2026-11-15T19:43:55.784Z",
+      "actor": "Data Source Manager",
+      "action": "Tested connector ds-gee (Error)",
+      "targetType": "datasource",
+      "targetId": "ds-gee",
+      "detail": "Earth Engine authentication failed: Earth Engine project probe failed (HTTP 400)."
+    },
+    {
       "id": "log-1794766402053-226",
       "timestamp": "2026-11-15T18:13:22.053Z",
       "actor": "OpenWeather Adapter",

@@ -183,9 +183,9 @@ class DataSourceManager {
                 : null,
         fallbackBehavior:
           'Local spherical polygon area + Sentinel-2 Band B8/B4 NDVI pipeline handles all spatial analysis.',
-        credentialRequirement: 'Optional Service Account JSON',
-        envVars: ['GEE_SERVICE_ACCOUNT_JSON'],
-        endpointInfo: 'https://earthengine.googleapis.com/v1',
+        credentialRequirement: 'Optional Service Account JSON + Project ID',
+        envVars: ['GEE_SERVICE_ACCOUNT_JSON', 'GEE_PROJECT_ID'],
+        endpointInfo: '/api/gee/health -> earthengine.googleapis.com/v1',
       },
       {
         id: 'ds-gemini',
